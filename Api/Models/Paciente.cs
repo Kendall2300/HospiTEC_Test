@@ -14,7 +14,6 @@
         public List<string> Tratamientos { get; set; } = new List<string>();
         public int Cama_asignada { get; set; } = 0; 
         public int id_reservacion { get; set; } = 0; //Preguntar a Myke
-        public List<Historial_Clinico> Historial { get; set; } = new List<Historial_Clinico>();
     
     }
 }

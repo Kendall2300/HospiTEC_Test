@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ejemplo de consumo de API</title>
+    <style>
+        /* Estilos CSS aquí */
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de consumo de API</h1>
+    <form id="formulario-ejemplo">
+        <label for="nombre">Ingresa tu nombre:</label>
+        <input type="text" id="nombre" name="nombre" />
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="respuesta-api"></p>
+
+    <script>
+        const formulario = document.getElementById("formulario-ejemplo");
+        const respuestaApi = document.getElementById("respuesta-api");
+
+        formulario.addEventListener("submit", event => {
+            event.preventDefault();
+            const nombre = document.getElementById("nombre").value;
+            fetch("https://localhost:7187/Example", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ Nombre: nombre })
+            })
+            .then(response => response.json())
+            .then(data => {
+                respuestaApi.textContent = data.mensaje;
+            });
+        });
+    </script>
+</body>
+</html>

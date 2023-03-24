@@ -273,11 +273,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kenda\\Desktop\\TEC\\Bases\\Tarea 1\\HospiTec\\API_Tareadef.csproj",
+      "projectUniqueName": "C:\\Users\\kenda\\Desktop\\TEC\\Bases\\Tarea 1\\HospiTEC_Test\\Api\\API_Tareadef.csproj",
       "projectName": "API_Tareadef",
-      "projectPath": "C:\\Users\\kenda\\Desktop\\TEC\\Bases\\Tarea 1\\HospiTec\\API_Tareadef.csproj",
+      "projectPath": "C:\\Users\\kenda\\Desktop\\TEC\\Bases\\Tarea 1\\HospiTEC_Test\\Api\\API_Tareadef.csproj",
       "packagesPath": "C:\\Users\\kenda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kenda\\Desktop\\TEC\\Bases\\Tarea 1\\HospiTec\\obj\\",
+      "outputPath": "C:\\Users\\kenda\\Desktop\\TEC\\Bases\\Tarea 1\\HospiTEC_Test\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kenda\\AppData\\Roaming\\NuGet\\NuGet.Config",
