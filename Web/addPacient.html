@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hospital TECnológico</title>
+    <link rel="stylesheet" href="addPacient.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="from-box">
+        <form action="https://localhost:7187/Paciente/agregar_paciente" method="post">
+            
+            <h1>Agregar paciente</h1>
+            
+            <div class="input-box">
+                <input type="text" placeholder="Nombre del paciente" id="NomPaciente">
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Primer apellido del paciente" id="PrimerApPac">
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Segundo apellido del paciente" id="SegApPac">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Cédula del paciente" id="CedPaciente">
+            </div>
+            
+            <div class="input-box">
+                <input type="number" placeholder="Número de contacto" id="NumTel">
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Dirección" id="Direccion">
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Fecha de nacimiento" id="Birthdate">
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Patologías" id="Patology">
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Tratamiento" id="Treatment">
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Ingrese su contraseña (al menos 8 caracteres)" id="password1">
+                <span class="eye" onclick="myFunction()">
+                    <i id="hide1" class="fa-solid fa-eye"></i>
+                    <i id="hide2" class="fa-solid fa-eye-slash"></i>
+                </span>
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Confirmar Contraseña" id="password2">
+            </div>
+        </form>
+        <!--Modificar la ubicacion de devolucion del onclick-->
+        <button type="button" class="advance-btn" onclick="Password();PostMethod();" id="Create_Btn"> AGREGAR </button>
+        <!--Modificar la ubicacion de devolucion del onclick-->
+        <button type="button" class="advance-btn" onclick="document.location='doctorHome.html'"> VOLVER</button>
+    </div>
+
+    
+    <script>
+
+        function PostMethod(){
+            const nombre = document.getElementById("NomPaciente");
+            const pApellido = document.getElementById("PrimerApPac");
+            const sApellido = document.getElementById("SegApPac");
+            const cedula = document.getElementById("CedPaciente");
+            const fechaNacimiento = document.getElementById("Birthdate");
+            const contrasena = document.getElementById("password1");
+            const telefono = document.getElementById("NumTel");
+            const direccion = document.getElementById("Direccion");
+            const patologia = document.getElementById("Patology");
+            const tratamiento = document.getElementById("Treatment");
+
+            const url = "https://localhost:7187/Paciente/agregar_paciente";
+
+            const datos = {
+                nombre: nombre,
+                apellido1: pApellido,
+                apellido2: sApellido,
+                cedula: cedula,
+                fecha_Nacimiento: fechaNacimiento,
+                contrasena: contrasena,
+                telefonos: telefono,
+                direcciones: direccion,
+                patologia: patologia,
+                tratamientos: tratamiento
+            };
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(datos)
+            })
+            .then(response => response.json())
+            .then(datos =>{
+                console.log(datos);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
+        }
+
+        function myFunction(){
+            var x= document.getElementById("password1");
+            var y= document.getElementById("hide1");
+            var z= document.getElementById("hide2");
+            var w= document.getElementById("password2");
+
+            if(x.type === 'password'){
+                x.type = "text";
+                w.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else{
+                x.type = "password";
+                w.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+
+        }
+        function Password(){
+            const btnCreate = document.getElementById('Create_Btn');
+            var pass_1 = document.getElementById("password1");
+            var pass_2 = document.getElementById("password2");
+            //
+            if(pass_1.value === pass_2.value){
+                if(pass_1.value.length < 8){
+                    btnCreate.textContent = "Error, la contraseña debe ser mayor a 8 caracteres";
+                }else{
+                    //document.location='addHystory.html'
+                    
+                }
+            }else{
+                btnCreate.textContent = "Error, las entradas no son iguales";
+            }
+            setTimeout(function() {
+                    btnCreate.textContent = "Create Account"; // Change the text back to "Submit" after 2 seconds
+                    }, 2000);
+
+
+        }
+    </script>
+</body>
+
+</html>
