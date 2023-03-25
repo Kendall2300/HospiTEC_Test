@@ -6,16 +6,16 @@ namespace API_Tareadef.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class Paciente : ControllerBase
+    public class PacienteController : ControllerBase
     {
         [HttpPost]
-        public IActionResult Post([FromBody] ExampleRequest request)
+        public IActionResult Post([FromBody] Paciente request)
         {
             if (request != null && !string.IsNullOrEmpty(request.Nombre))
             {
-                var response = new ExampleResponse
+                var response = new Response
                 {
-                    Mensaje = $"Hola, {request.Nombre + request.Apellido}!"
+                    Mensaje = $"Hola, {request.Nombre}!"
                 };
                 string jsonString = JsonConvert.SerializeObject(request);
                 string path = @".\\Recursos\\PacienteJson.json";
