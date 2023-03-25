@@ -268,19 +268,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kenda\\.nuget\\packages\\": {}
+    "C:\\Users\\maxga\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kenda\\Desktop\\TEC\\Bases\\Tarea 1\\HospiTEC_Test\\Api\\API_Tareadef.csproj",
+      "projectUniqueName": "C:\\Users\\maxga\\OneDrive\\Documentos\\Cursos CE\\Bases de Datos S1.2023\\HospiTEC_Test\\Api\\API_Tareadef.csproj",
       "projectName": "API_Tareadef",
-      "projectPath": "C:\\Users\\kenda\\Desktop\\TEC\\Bases\\Tarea 1\\HospiTEC_Test\\Api\\API_Tareadef.csproj",
-      "packagesPath": "C:\\Users\\kenda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kenda\\Desktop\\TEC\\Bases\\Tarea 1\\HospiTEC_Test\\Api\\obj\\",
+      "projectPath": "C:\\Users\\maxga\\OneDrive\\Documentos\\Cursos CE\\Bases de Datos S1.2023\\HospiTEC_Test\\Api\\API_Tareadef.csproj",
+      "packagesPath": "C:\\Users\\maxga\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\maxga\\OneDrive\\Documentos\\Cursos CE\\Bases de Datos S1.2023\\HospiTEC_Test\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kenda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\maxga\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
