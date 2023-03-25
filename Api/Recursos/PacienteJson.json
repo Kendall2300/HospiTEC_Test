@@ -1,5 +1,87 @@
 {
 
+} {
+  "Nombre": "Max",
+  "Apellido1": "ga",
+  "Apellido2": "mora",
+  "Cedula": 0,
+  "Fecha_Nacimiento": "string",
+  "Contrasena": "string",
+  "Telefonos": [ "string" ],
+  "Direcciones": [ "string" ],
+  "Patologia": [ "string" ],
+  "Tratamientos": [ "string" ],
+  "Cama_asignada": 0,
+  "id_reservacion": 0,
+  "Historial": [
+    {
+      "Procedimiento": {
+        "Nombre_Procedimiento_Medico": "string",
+        "Dias_Recuperacion": 0,
+        "ID_Reservacion": 0
+      },
+      "Tratamiento": "string",
+      "Fecha_Procedimiento": "string"
+    }
+  ]
+} {
+  "Nombre": "myke",
+  "Apellido1": "valverde",
+  "Apellido2": "Acosta",
+  "Cedula": 0,
+  "Fecha_Nacimiento": "string",
+  "Contrasena": "string",
+  "Telefonos": [ "string" ],
+  "Direcciones": [ "string" ],
+  "Patologia": [ "string" ],
+  "Tratamientos": [ "string" ],
+  "Cama_asignada": 0,
+  "id_reservacion": 0,
+  "Historial": [
+    {
+      "Procedimiento": {
+        "Nombre_Procedimiento_Medico": "string",
+        "Dias_Recuperacion": 0,
+        "ID_Reservacion": 0
+      },
+      "Tratamiento": "string",
+      "Fecha_Procedimiento": "string"
+    }
+  ]
+} {
+  "Nombre": "kljlkjlkjk",
+  "Apellido1": "string",
+  "Apellido2": "string",
+  "Cedula": 0,
+  "Fecha_Nacimiento": "string",
+  "Contrasena": "string",
+  "Telefonos": [ "string" ],
+  "Direcciones": [ "string" ],
+  "Patologia": [ "string" ],
+  "Tratamientos": [ "string" ],
+  "Cama_asignada": 0,
+  "id_reservacion": 0,
+  "Historial": [
+    {
+      "Procedimiento": {
+        "Nombre_Procedimiento_Medico": "string",
+        "Dias_Recuperacion": 0,
+        "ID_Reservacion": 0
+      },
+      "Tratamiento": "string",
+      "Fecha_Procedimiento": "string"
+    }
+  ]
+} {
+  "Nombre": "Kendall",
+  "Apellido": "Martinez"
 }
-{"Nombre":"Max","Apellido1":"ga","Apellido2":"mora","Cedula":0,"Fecha_Nacimiento":"string","Contrasena":"string","Telefonos":["string"],"Direcciones":["string"],"Patologia":["string"],"Tratamientos":["string"],"Cama_asignada":0,"id_reservacion":0,"Historial":[{"Procedimiento":{"Nombre_Procedimiento_Medico":"string","Dias_Recuperacion":0,"ID_Reservacion":0},"Tratamiento":"string","Fecha_Procedimiento":"string"}]}
-{"Nombre":"myke","Apellido1":"valverde","Apellido2":"Acosta","Cedula":0,"Fecha_Nacimiento":"string","Contrasena":"string","Telefonos":["string"],"Direcciones":["string"],"Patologia":["string"],"Tratamientos":["string"],"Cama_asignada":0,"id_reservacion":0,"Historial":[{"Procedimiento":{"Nombre_Procedimiento_Medico":"string","Dias_Recuperacion":0,"ID_Reservacion":0},"Tratamiento":"string","Fecha_Procedimiento":"string"}]}{"Nombre":"kljlkjlkjk","Apellido1":"string","Apellido2":"string","Cedula":0,"Fecha_Nacimiento":"string","Contrasena":"string","Telefonos":["string"],"Direcciones":["string"],"Patologia":["string"],"Tratamientos":["string"],"Cama_asignada":0,"id_reservacion":0,"Historial":[{"Procedimiento":{"Nombre_Procedimiento_Medico":"string","Dias_Recuperacion":0,"ID_Reservacion":0},"Tratamiento":"string","Fecha_Procedimiento":"string"}]}
+{"Nombre":"daniel","Apellido":"urena"}
+{"Nombre":"JFGDHGF","Apellido":"YTDGFGG"}
+{"Nombre":"Kendall","Apellido":"mngc"}\
+{"Nombre":"string","Apellido":"string"}
+{"Nombre":"string","Apellido":"string"}
+{"Nombre":"string","Apellido":"string"}
+{"Nombre":"string","Apellido":"string"}
+{"Nombre":"string","Apellido":"string"}
+{"Nombre":"kasd","Apellido":"bvgavas"}

@@ -12,6 +12,8 @@
     <form id="formulario-ejemplo">
         <label for="nombre">Ingresa tu nombre:</label>
         <input type="text" id="nombre" name="nombre" />
+        <label for="apellido">Ingresa tu apellido:</label>
+        <input type="text" id="apellido" name="apellido" />
         <button type="submit">Enviar</button>
     </form>
     <p id="respuesta-api"></p>
@@ -23,12 +25,13 @@
         formulario.addEventListener("submit", event => {
             event.preventDefault();
             const nombre = document.getElementById("nombre").value;
-            fetch("https://localhost:7187/Example", {
+            const apellido = document.getElementById("apellido").value;
+            fetch("https://localhost:7187/Paciente", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({ Nombre: nombre })
+                body: JSON.stringify({ Nombre: nombre , Apellido: apellido})
             })
             .then(response => response.json())
             .then(data => {
